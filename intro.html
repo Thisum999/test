@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahinda College E-Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        :root {
+            --primary: #ffd700; /* Gold */
+            --background: #f7f7f7; /* Light Gray */
+            --text: #333333; /* Dark Text */
+            --highlight: #fbf777; /* Orange Red */
+            --gradient: linear-gradient(135deg, #ffd700, #ffa500, #ff4500);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: var(--background);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Background Elements */
+        .decorative-circle {
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            background: var(--gradient);
+            border-radius: 50%;
+            opacity: 0.15;
+            animation: move 12s infinite ease-in-out alternate;
+        }
+
+        .circle1 {
+            top: 10%;
+            left: 15%;
+            animation-delay: 0s;
+        }
+
+        .circle2 {
+            bottom: 25%;
+            right: 20%;
+            animation-delay: 4s;
+        }
+
+        .circle3 {
+            top: 50%;
+            left: 70%;
+            animation-delay: 2s;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translate(-10px, -10px);
+            }
+            100% {
+                transform: translate(10px, 10px);
+            }
+        }
+
+        .header {
+            text-align: center;
+            margin-top: 3rem;
+            z-index: 2;
+        }
+
+        .header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid var(--primary);
+            animation: zoomIn 2s ease;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin-top: 1rem;
+            text-shadow: 2px 2px 5px var(--text);
+            animation: fadeIn 1.5s ease;
+        }
+
+        /* Navigation Links */
+        .nav-links {
+            margin: 1.5rem 0;
+        }
+
+        .nav-links a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: var(--text);
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Button Section */
+        .button-container {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 3rem 0;
+            z-index: 2;
+        }
+
+        .button {
+            display: block;
+            width: 180px;
+            padding: 0.8rem;
+            text-align: center;
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: var(--text);
+            background: var(--background);
+            border: 2px solid var(--primary);
+            border-radius: 8px;
+            text-transform: uppercase;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            text-decoration: none;
+            animation: slideIn 1.5s ease;
+        }
+
+        .button:hover {
+            background: var(--highlight);
+            color: #140101;
+            transform: scale(1.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer */
+        .footer {
+            width: 100%;
+            text-align: center;
+            padding: 1rem 0;
+            background: var(--background);
+            color: var(--text);
+            font-size: 1rem;
+            z-index: 2;
+            border-top: 2px solid var(--primary);
+        }
+
+        .footer a {
+            color: #000000; /* Black color for the link */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes zoomIn {
+            from {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Background Circles -->
+    <div class="decorative-circle circle1"></div>
+    <div class="decorative-circle circle2"></div>
+    <div class="decorative-circle circle3"></div>
+
+    <!-- Header Section -->
+    <div class="header">
+        <img src="https://i.ibb.co/CKMVDNtM/images-1.png" alt="School Logo">
+        <h1>Mahinda College E-Register</h1>
+        <div class="nav-links">
+            <a href="intro.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <!-- Button Grid -->
+    <div class="button-container">
+        <a href="index9.html" class="button">Grade 9</a>
+        <a href="index10.html" class="button">Grade 10</a>
+        <a href="index11.html" class="button">Grade 11</a>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        Designed by <a href="https://wa.me/+94768846375">Thisum Jalitha</a>
+    </div>
+</body>
+
+</html>
